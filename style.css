@@ -141,8 +141,8 @@ header {
 
 .nav {
     position: fixed;
-    background: var(--clr-accent);
-    color: var(--clr-accent);
+    background: var(--clr-dark);
+    color: var(--clr-light);
     top: 0;
     bottom: 0;
     left: 0;
