@@ -1,138 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content = "width=device-width, initial-scale=1">
-        <title>Jacob Edelin Portfolio Website</title>
-        <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-        <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jacob Edelin | Information Scientist </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <header>
-            <button class="nav-toggle" aria-label="toggle navigation">
-                <span class="hamburger"></span>
-            </button>
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
-                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
-                </ul>
-            </nav>
-        </header>
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+        rel="stylesheet">
 
-        <!--Introduction-->
-        <section class="intro" id="home">
-            <h1 class="section__title section__title--intro">
-                Hi, I am <strong>Jacob Edelin</strong>
-            </h1>
-            <p class="section__subtitle section__subtitle--intro">Entry-Level Programmer</p>
-            <img src="Images/selfie01.jpg" alt="" class="intro__img">
-        </section>
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--Navigation Bar-->
+    <header>
+        <nav class="navbar">
+            <a href="#contact" class="nav__link">Contact</a>
+            <a href="#projects" class="nav__link">Projects</a>
+            <a href="#about" class="nav__link">About</a>
+            <a href="#home" class="nav__link">Home</a>
+        </nav>
+    </header>
+
+    <!--Introduction-->
+    <section class="home" id="home">
+        <h1 class="section__title section__title--home">
+            Hello, I am <span> Jacob</span>!
+        </h1>
+        <p class="section__subtitle section__subtitle--home">Software Developer and Information Scientist</p>
+        <a href="#projects" class="btn">View my work <i class='fas fa-arrow-down'></i></a>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <p class="section__subtitle section__subtitle--about">About</p>
+
+        <div class="about__body">
+            <p>
+                I’m a software developer and Information Scientist with a deep passion for technology. I’m inspired by
+                how software engineers blend creativity, logic, and technology to bring innovative ideas to life. Always
+                eager to learn and explore new concepts, I find excitement in discovering and trying new things.
+                In my free time, I enjoy playing video games and have been studying game development as a personal
+                interest.
+            </p>
+        </div>
+
+        <div class="skills">
+            <div class="skills__row">
+                <div class="skills__item skills__item--html">
+                    <div class="skills__item-content">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+                        <div class="skills__item-name">HTML</div>
+                    </div>
+                </div>
+
+                <div class="skills__item skills__item--css">
+                    <div class="skills__item-content">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+                        <div class="skills__item-name">CSS</div>
+                    </div>
+                </div>
+
+                <div class="skills__item skills__item--javascript">
+                    <div class="skills__item-content">
+                        <img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                        <div class="skills__item-name">JavaScript</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills__row">
+                <div class="skills__item skills__item--python">
+                    <div class="skills__item-content">
+                        <img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
+                        <div class="skills__item-name">Python</div>
+                    </div>
+                </div>
+
+                <div class="skills__item skills__item--json">
+                    <div class="skills__item-content">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/json/json-original.svg" />
+                        <div class="skills__item-name">JSON</div>
+                    </div>
+                </div>
+
+                <div class="skills__item skills__item--c#">
+                    <div class="skills__item-content">
+                        <img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" />
+                        <div class="skills__item-name">C#</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills__row">
+                <div class="skills__item skills__item--java">
+                    <div class="skills__item-content">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />
+                        <div class="skills__item-name">Java</div>
+                    </div>
+                </div>
+
+                <div class="skills__item skills__item--git">
+                    <div class="skills__item-content">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
+                        <div class="skills__item-name">Git</div>
+                    </div>
+                </div>
+
+                <div class="skills__item skills__item--mysql">
+                    <div class="skills__item-content">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" />
+                        <div class="skills__item-name">MySQL</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects" id="projects">
+        <p class="section__subtitle section__subtitle--projects">Projects</p>
+
+        <div class="project project-left">
+            <div class="project__image-container cell">
+                <div class="project__image-cell">
+                    <img src="Images/clear-cell-game.png" alt="">
+                </div>
+            </div>
+
+            <div class="project__info">
+                <h2 class="project__title">
+                    Clear Cell Game
+                </h2>
+                <p class="project__description">
+                    A Tetris-style game built with Java.
+                </p>
+                <a href="https://github.com/JacobEdelin/clear-cell-game" 
+                    class="btn project-btn" target="_blank"> View Code</a>
+            </div>
+        </div>
+
+        <div class="project project-right">
+            <div class="project__image-container leaflet">
+                <div class="project__image-leaflet">
+                    <img src="Images/leaflet-exercise.png" alt="">
+                </div>
+            </div>
+
+            <div class="project__info">
+                <h2 class="project__title">
+                    Leaflet Integration Exercise
+                </h2>
+                <p class="project__description">
+                    A web application using Leaflet and the BigDataCloud Reverse Geocoding API 
+                    to generate and display three random U.S. coordinates as readable localities.
+                </p>
+                <a href="https://jacobedelin.github.io/leaflet-integration-exercise/" 
+                    class="btn project-btn" target="_blank">Live App</a>
+                <br>
+                <a href="https://github.com/JacobEdelin/leaflet-integration-exercise" 
+                    class="btn project-btn" target="_blank">View Code</a>
+            </div>
+        </div>
+
+        <div class="project project-left">
+            <div class="project__image-container spotify">
+                <div class="project__image-spotify">
+                    <img src="Images/spotify-app.png" alt="">
+                </div>
+            </div>
+
+            <div class="project__info">
+                <h2 class="project__title">
+                    Spotify Recommendation App
+                </h2>
+                <p class="project__description">
+                    Designed with Abdullah Khan 
+                    <br>
+                    and Bryce Benedick.
+                    <br>
+                    Lets users search for Tracks, Artists, or Albums and provides 
+                    similar recommendations, utilizing the Spotify API.
+                </p>
+                <a href="https://inst-377-group-45-final.vercel.app/" 
+                    class="btn project-btn" target="_blank">Live App</a>
+                <br>
+                <a href="https://github.com/INST377-UMD/INST377-Spotify-Recommendation-App" 
+                class="btn project-btn" target="_blank">View Code</a>
+            </div>
+        </div>
+
+        <div class="project project-right">
+            <div class="project__image-container interest">
+                <div class="project__image-interest">
+                    <img src="Images/interest-table.png" alt="">
+                </div>
+            </div>
+
+            <div class="project__info">
+                <h2 class="project__title">
+                    Interest Table Calculator
+                </h2>
+                <p class="project__description">
+                    A Java program with a JavaFX GUI that calculates the 
+                    progression of simple and compound interest for a 
+                    given principal rate.
+                </p>
+                <a href="https://github.com/JacobEdelin/interest-table-calculator" 
+                    class="btn project-btn" target="_blank">View Code</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <p class="section__subtitle section__subtitle--contact">Contact</p>
+
+        <p class="contact__text">
+            If you have any questions or are interested in working together, 
+            feel free to provide your details, and I’ll reach out as soon 
+            as possible.
+        </p>
+
         
-        <!--My Services-->
-        <section class="my-services" id="services">
-            <h2 class="section__title section__title--services">What I Do</h2>
-            <div class="services">
-                <div class="service">
-                    <h3>Java</h3>
-                    <p>This is the language I have the most experience with. With over 15 Java-based programs to my
-                        name, I enjoy creating applications that utilize all sorts of bells and whistles, from JavaFX to Swing.
-                    </p>
-                </div> <!-- / service -->
 
-                <div class="service">
-                    <h3>C#</h3>
-                    <p>Though not currently my focus, my interest in game development never left me. Using Unity, I have
-                        been learning C# in order to develop an original game.
-                    </p>
-                </div> <!-- / service -->
-                
-                <div class="service">
-                    <h3>Web Development</h3>
-                    <p>As evident by this website, I have studied some HTML, CSS, and JavaScript. I have not just used these languages to 
-                        create my portfolio website, but a small weather application as well.</p>
-                </div> <!-- / service -->
-            </div> 
 
-            <a href="#work" class="btn">My Work</a>
-        </section>
+    </section>
 
-        <!-- About me -->
-        <section class="about-me" id="about">
-            <h2 class="section__title section__title--about">Me, Myself & I</h2>
-            <p class="section__subtitle section__subtitle--about">Student & Up-And-Coming Programmer</p>
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="mailto:jacobedelin4@gmail.com" class="footer__link">jacobedelin4@gmail.com</a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com/JacobEdelin" target="_blank">
+                    <i class="fa-brands fa-github"></i></a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.linkedin.com/in/jacob-edelin/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i></a>
+            </li>
+        </ul>
+    </footer>
+</body>
 
-            <div class="about-me__body">
-                <p>Hello! I'm Jacob, a (relatively new) programmer who is currently pursuing a bachelor's 
-                    degree in Computer Science at the University of Maryland. Ever since early childhood, 
-                    I've yearned to become a professional programmer due to my love of video games. The process 
-                    of developers bringing their creativity to life absolutely fascinated me in a way 
-                    like no other, and I knew it was what I wanted to do.
-                </p>
-                <p> 
-                    Though I did not start coding seriously until last year, my passion for programming has grown 
-                    larger in that time. Java is currently my strongest language, but I have continued to study 
-                    others such as C# and HTML to expand my knowledge and versatiity, and am willing to tackle whatever 
-                    challenges come my way.
-                </p>
-                <p> 
-                    I am still growing as a programmer, and hope to continue that growth by applying my passion and
-                    drive to any company that's willing to employ me. A hard-worker, team player, and self-starter, I hope
-                    to be given the chance to learn from my peers and prove myself as a professional programmer, one 
-                    line of code at a time.</p>
-            </div>
-
-            <img src="Images/selfie01.jpg" alt="" class="about-me__img">
-        </section>
-
-        <!-- My Work -->
-        <section class="my-work" id="work">
-            <h2 class="section__title section__title--work">My Work</h2>
-            <p class="section__subtitle section__subtitle--work">A selection of my work</p>
-
-            <div class="portfolio">
-                <!--Portfolio Item 01-->
-                <a href="portfolio-item.html" class="portfolio__item">
-                    <img src="Images/interest-table-square.png" alt="" class="portfolio__img">
-                </a>
-                <!--Portfolio Item 02-->
-                <a href="portfolio-item-02.html" class="portfolio__item">
-                    <img src="Images/clear-cell-game-square-02.png" alt="" class="portfolio__img">
-                </a>
-                <!--Portfolio Item 03-->
-                <a href="portfolio-item-03.html" class="portfolio__item">
-                    <img src="Images/web-page-square.png" alt="" class="portfolio__img">
-                </a>
-            </div>
-
-            <a href="https://github.com/JacobEdelin/jacobedelin.github.io/tree/main/Portfolio" class="btn-portfolio">My Portfolio</a>
-
-        </section>
-
-        <!-- Footer -->
-        <footer class="footer">
-            <a href="mailto:jacobedelin4@gmail.com" class="footer__link">jacobedelin4@gmail.com</a>
-            <ul class="social-list">
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://github.com/JacobEdelin/jacobedelin.github.io/tree/main/Portfolio">
-                        <i class="fa-brands fa-github"></i></a>
-                </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://www.linkedin.com/in/jacob-edelin/">
-                        <i class="fa-brands fa-linkedin"></i></a>
-                </li>
-            </ul>
-        </footer>
-
-        <script src="index.js"></script>
-
-    </body>
-</html> 
+</html>
